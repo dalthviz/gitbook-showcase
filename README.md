@@ -8,29 +8,36 @@ This is a template project for creating books using Gitbook.
 
 ## What is the software required to install it ?
 
-You must have installed [node.js](https://nodejs.org), [Git]((https://git-scm.com/downloads)) and the [Gitbook Commando Line tools](https://github.com/GitbookIO/gitbook-cli)
+You must have installed [node.js](https://nodejs.org), [Git]((https://git-scm.com/downloads)) and the [Gitbook Command Line tools](https://github.com/GitbookIO/gitbook-cli)
 
 - For node.js
   - To check if the node.js is installed, you may execute:
+  
     ```
     $ npm -v
     ```
+    
   - if it is not installed, you must download and install the software from [the official node.js website](https://nodejs.org/en/download/)
 
 - For Git
   - To check if Git is installed, you may execute:
+  
     ```
     $ git --version
     ```
+    
   - if it is not installed, you must download and install the software from [the official Git website](https://git-scm.com/downloads)
 
 - For Gitbook Cligitbook
   - To check if Gitbook-Cli is installed, you may execute:
   - If it is not installed, you must install the package using npm as an administrator
+  
     ```
     $ npm install -g gitbook-cli
     ```
+    
   - In linux or mac, you may use ``sudo``to set the user for the ``.npm`` folder and install the package
+  
     ```
     $ export PATH=$PATH:$HOME/.npm-packages/bin
     $ sudo chown -R $USER:$GROUP ~/.npm
