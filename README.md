@@ -30,6 +30,10 @@ You must have installed [node.js](https://nodejs.org), [Git]((https://git-scm.co
 
 - For Gitbook Cligitbook
   - To check if Gitbook-Cli is installed, you may execute:
+    ```
+    $ gitbook -V
+    ```
+
   - If it is not installed, you must install the package using npm as an administrator
   
     ```
@@ -56,7 +60,7 @@ To deploy the book in a Github-Pages website, you must change the URL for the re
 
 The project includes a set of commands that can be used to automate part of the process.
 
-- To install or update the Github plugins, if required.
+- To install or update the Gitbook plugins, if required.
 
   ```
   $ npm book:prepare
