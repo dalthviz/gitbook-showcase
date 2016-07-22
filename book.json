@@ -4,7 +4,7 @@
   "language": "en",
   "gitbook": "2.4.3",
   "structure": {
-    "readme": "Introduction.md",
+    "readme": "About.md",
     "summary": "Contents.md"
   },
   "plugins" : [
