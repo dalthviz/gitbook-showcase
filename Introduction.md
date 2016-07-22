@@ -1,6 +1,5 @@
-# Gitbook Template
+# Gitbook Showcase
 
 ## Introduction
 
-[Gitbook](http://gitbook.io) is a markdown-based system to create books. This is a template for creating Gitbook books.
-
+The Showcase application is part of the FaMosa proyect.
