@@ -2,4 +2,4 @@
 
 [Introduction](Introduction.md)
 
-1. [Chapter 1](content/Chapter1.md)
+1. [Chapter 1: Arquitecture](content/Chapter1.md)
