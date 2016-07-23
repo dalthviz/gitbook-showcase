@@ -31,5 +31,5 @@ Based on documentation of [Firebase](https://firebase.google.com/docs/database/w
 26.           }
 27. }
 ```
-Thus, in the JSON, you can see the relationship between the artifact with identification **UIDArtifact** and the project with identification **UIDProject** (in the list of artifacts in the project the identification of the device with a value observed true is visible - line 10 -). In turn, a similar relationship between the aforementioned project and the user wit identification "UIDUser" exists (in the user projects list -line 21- and  in the administrators, configurators and modelers lists of the project -lines 9, 11 and 13 respectively-).
+Thus, in the JSON, you can see the relationship between the artifact with identification **UIDArtifact** and the project with identification **UIDProject** (in the list of artifacts in the project the identification of the artifact with a value observed true is visible - line 10 -). In the same way, a similar relationship between the aforementioned project, and the user with identification "UIDUser", exists (in the user projects list -line 21- and  in the administrators, configurators and modelers lists of the project -lines 9, 11 and 13 respectively-).
 
