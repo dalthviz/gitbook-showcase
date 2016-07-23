@@ -3,86 +3,71 @@
 The software to be developed is a web application that allows users to:
 
 1. **Edit feature models**, and
+
 2. **Configure products** according to these feature models.
 
-Each user should have their own models, independent of which have other users. Will be possible for a user to share their models. A user could edit and / or configure their own feature models or the ones he has access. 
+Each user could have their own models, independent of which have other users. Will be possible for a user to share their models. A user could edit and / or configure their own feature models or the ones he has access. 
 
-Additionally, it is expected that the application enables managers to:
+Additionally, it is expected that the application enable managers to:
 
-3. **Manage users of the application**, including options for
+1. **Manage users of the application**, including options for
 authenticate users and allow sharing models, and
 
-4. **Control of Versions** of different models and configurations.
+2. **Control of Versions** of different models and configurations.
 
-Ahead on the detail, the modules of the system are presented.
+Ahead on detail, the modules of the system are presented.
 
 ###1.1 Edition of feature models
 
-Each user will be able to?:
-See a list of character models sticas ??
-own or to which
+Each user will be able to:
+
+1. **See a list of feature models** own or to which
 have access. Models must be associated with a user
-owner
-.
-The owner could? To share models so that other users
-they can edit, configure them or with both.
-Edit character model ?? sticas.
-?
-Add, or Delete character Modi car ?? sticas.
-?
-Add, Remove Modi car or character attributes sticas ??
-?
-Moving parts of a? Tree to another
-?
-Add, Remove Modi car or restrictions.
-Validate a model of character ?? sticas.
-Determine if the model does not
-has errors, e.g., which is a model v? Alido, not having character sticas ??
-there are no dead or contradictory constraints that.
-3.2. With guration? On Products
-Each user also to be able to?:
-See a list of models that can be con gure
-, either
-that they are unique or you have access to these models.
-Start with guration? On of a product
-from a model.
-?
-Select or de-select a character ?? stica.
-The system de-
-ber? propagate decisions and select or deselect the character-
-?? ter sticas according to appropriate restrictions.
-?
-Prefer or not prefer one character ??-stica.
-?
-Undoing a decision
-(Selection? On, de-selection? On, preference or not
-preference)
-?
-Auto-complete a con guration? On
-.
-Resume with guration? On a product.
-Restarting the process
-at the point where dej? or the? last time.
-3.3. User Management
-Each user will be able to?:
-Log me? On in the application? On
-.
-Change your personal details
-.
-Change Password ~ ​​na
-.
-Additionally, a
-admin user
-be able to?:
-Create, Modi car or delete users
-.
-Change password of a user ~ na
-.
-3
-3.4. Version control
-Each user will be able to?:
-View the version history of a Model
-.
-See the version history a With guration? On
-.
-Traductor de Google para empresas:Google Translator ToolkitTraductor de sitios web
+_owner_. The owner could share models so that other users can edit, configure them or do both.
+
+2. **Edit feature models.**
+   
+    * Add, or Delete feature models.
+    * Add, Remove, Edit attributes of feature models.
+    * Moving parts of tree to another.
+    * Add, Remove, Edit constrains.  
+       
+3. **Validate feature models.** Determine if the model does not has errors, e.g., that the model is a valid one, that does not have dead characteristics, or does not have contradictory constraints.
+
+###3.2. Configuration of Products
+
+Each user also to be able to:
+
+1. **See a list of models that can be configured**, either
+that they are of the user or he has access to these models.
+
+2. **Start the configuration of a product** from a model.
+    * **Select or de-select a characteristics.** The system should propagate decisions and select or deselect the characteristics according to appropriate restrictions.
+    * **Prefer or not prefer one characteristic.**
+    * **Undoing a decision** (selection, de-selection, preference or not preference)
+    * **Auto-complete a configuration.**
+3. **Resume configuration process of a product.** Restarting the process at the point where it was the last time.
+
+###3.3. User Management
+
+Each user will be able to:
+
+1. **Log In in the application.**  
+
+2. **Change his personal details.**  
+
+3. **Change Password.**  
+
+Additionally, a _admin user_ will be able to:
+
+1. **Create or Edit users.**
+
+2. **Change password of a user.**
+
+###3.4. Version control
+
+Each user will be able to:
+
+1. **View the version history of a Model.**
+
+2. **See the version history of a Configuration.**
