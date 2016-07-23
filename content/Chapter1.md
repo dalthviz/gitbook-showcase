@@ -5,22 +5,19 @@ The software to be developed is a web application that allows users to:
 1. **Edit feature models**, and
 2. **Configure products** according to these feature models.
 
-Each user should have their own models, independent of which have other users. Will be possible for a user to share their models. A user could edit and / or configure their own feature models or to cu signal have access. 
+Each user should have their own models, independent of which have other users. Will be possible for a user to share their models. A user could edit and / or configure their own feature models or the ones he has access. 
 
 Additionally, it is expected that the application? On enable managers of the application
-Four.
-Manage users of the application? On
-Including options for
+
+3. **Manage users of the application**, including options for
 authenticate users and allow sharing models, and
-5.
-Versioning
-of different models and configurations.
-AHEAD? On the detail of the m? ODULES system is presented.
-3
-The application? On use? Services already developed by the TiCsw group to analyze and review
-The models.
-2
-3.1. Edition? Caracter Models on sticas ??
+
+4. **Control of Versions** of different models and configurations.
+
+Ahead on the detail, the modules of the system are presented.
+
+###1.1 Edition of feature models
+
 Each user will be able to?:
 See a list of character models sticas ??
 own or to which
