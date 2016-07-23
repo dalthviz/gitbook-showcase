@@ -1,34 +1,35 @@
 #Structure Data
 
-The Structure Data...
+Based on documentation of [Firebase](https://firebase.google.com/docs/database/) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that between entities, the relationships are handled with references between arrangements with pairs key-value, where the key is the identification of the element within the corresponding list (_artifacts_, _projects_, or _users_), while the value is set to true. Next, an example of this  structuring methodology is shown:
 
 ```javascript
-{
-"artifacts" : { "UIDArtifact" :
-                { "json" : http://localhost:63342/app/example.json",
-                "name" : "Example Model", 
-                "uuid" : "102" 
-                },...
-              },
-"projects" : { "UIDProject" :
-                { "administrators" : { "UIDUser" : true },                      
-                "artifacts" : { "UIDArtifact" : true, }, 
-                "configurators" : { "UIDUser" : true },             
-                "description" : "Ejemplo", 
-                "modelers" : { "UIDUsuario" : true},
-                "name" : "Proyecto Ejemplo", 
-                "parameters" : "http://localhost:8080/famosa.server", 
-                "tags" : [ "Example" ] 
-               },...
-             },
-"users" : { "UIDUser" : 
-               { "name" : "Daniel Althviz", 
-               "projects" : {"UIDProject" : true,...}, 
-               "role" : true, 
-               "uid" : "UIDUser",
-               "user" : "d.althviz10@uniandes.edu.co" 
-               },...
-          }
-}
-
+1. {
+2. "artifacts" : { "UIDArtifact" :
+3.                { "json" : http://localhost:63342/app/example.json",
+4.                "name" : "Example Model", 
+5.                "uuid" : "102" 
+6.                },...
+7.              },
+8. "projects" : { "UIDProject" :
+9.               { "administrators" : { "UIDUser" : true },                      
+10.             "artifacts" : { "UIDArtifact" : true, }, 
+11.             "configurators" : { "UIDUser" : true },             
+12.             "description" : "Ejemplo", 
+13.             "modelers" : { "UIDUsuario" : true},
+14.             "name" : "Proyecto Ejemplo", 
+15.             "parameters" : "http://localhost:8080/famosa.server", 
+16.             "tags" : [ "Example" ] 
+17.              },...
+18.             },
+19. "users" : { "UIDUser" : 
+20.              { "name" : "Daniel Althviz", 
+21.            "projects" : {"UIDProject" : true,...}, 
+22.            "role" : true, 
+23.            "uid" : "UIDUser",
+24.            "user" : "d.althviz10@uniandes.edu.co" 
+25.             },...
+26.           }
+27. }
 ```
+
+
