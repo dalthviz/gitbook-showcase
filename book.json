@@ -2,7 +2,7 @@
   "title" : "Gitbook Template",
   "description" : "Book for the application Showcase",
   "language": "en",
-  "gitbook": "2.4.3",
+  "gitbook": "2.5.2",
   "structure": {
     "readme": "About.md",
     "summary": "Contents.md"
