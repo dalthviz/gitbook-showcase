@@ -7,7 +7,7 @@ The software to be developed is a web application that allows users to:
 
 Each user should have their own models, independent of which have other users. Will be possible for a user to share their models. A user could edit and / or configure their own feature models or the ones he has access. 
 
-Additionally, it is expected that the application? On enable managers of the application
+Additionally, it is expected that the application enables managers to:
 
 3. **Manage users of the application**, including options for
 authenticate users and allow sharing models, and
