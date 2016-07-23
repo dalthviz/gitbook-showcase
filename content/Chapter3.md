@@ -1,6 +1,6 @@
 #Structure Data
 
-Based on documentation of [Firebase](https://firebase.google.com/docs/database/) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that between entities, the relationships are handled with references between arrangements with pairs key-value, where the key is the identification of the element within the corresponding list (_artifacts_, _projects_, or _users_), while the value is set to true. Next, an example of this  structuring methodology is shown:
+Based on documentation of [Firebase](https://firebase.google.com/docs/database/web/structure-data) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that between entities, the relationships are handled with references between arrangements with pairs key-value, where the key is the identification of the element within the corresponding list (_artifacts_, _projects_, or _users_), while the value is set to true. Next, an example of this  structuring methodology is shown:
 
 ```javascript
 1. {
