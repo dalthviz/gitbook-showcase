@@ -8,7 +8,11 @@ The architecture of the application is compose by a set of  modules  specified a
 
 3. **Artifact**, for handling different models to edit and manage (models features and product configurations are the ones currently supported). Each artifact belongs to particular project, and can be accessed by the users that have the corresponding permissions. Also, is processed using a conection to the serve that contains the solvers developed by the [TiCSW group](http://ticsw.uniandes.edu.co).
 
-4. **Directives**, for the management of the different directives that are used in the application for displaying models features (display and configuration).
+As a part of the **Artifact** module, a set of directives (components for the user interface) that enables to visualize, configure and edit the feature models and configuration ones. Can be mentioned:
+
+* Directive for the visualization of feature models.
+* Directive for the configuration of feature models in tree way.
+* Directive for configuration of feature models using a form.
 
 Each of these modules has a set of elements to fulfill its function such as controllers, services and HTML templates. This organization was determined searching for the project to be cohesive but loosely coupled, and the structure to be simple to understand.  
 
