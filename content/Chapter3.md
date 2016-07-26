@@ -1,6 +1,6 @@
 #Structure Data
 
-Based on documentation of [Firebase](https://firebase.google.com/docs/database/web/structure-data) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that between entities, the relationships are handled with references between arrangements with pairs key-value, where the key is the identification of the element within the corresponding list (_artifacts_, _projects_, or _users_), while the value is set to true. Next, an example of this  structuring methodology is shown:
+Based on documentation of [Firebase](https://firebase.google.com/docs/database/web/structure-data) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that the entities are store in a collections (an array) en the root of the database. The relationships between entities are handled with references using for a key the identification of the element in the correspondent list (_artifacts_, _projects_, or _users_), and the value true.
 
 ```javascript
 1. {
@@ -31,5 +31,31 @@ Based on documentation of [Firebase](https://firebase.google.com/docs/database/w
 26.           }
 27. }
 ```
-Thus, in the JSON, you can see the relationship between the artifact with identification **UIDArtifact** and the project with identification **UIDProject** (in the list of artifacts in the project the identification of the artifact with a value observed true is visible - line 10 -). In the same way, a similar relationship between the aforementioned project, and the user with identification "UIDUser", exists (in the user projects list -line 21- and  in the administrators, configurators and modelers lists of the project -lines 9, 11 and 13 respectively-).
+In the JSON, note that the _artifacts_ are in an array in th root of the tree. Also, there is an artifact identify **UIDArtifact**. In the same way, the _projects_ are in another array called _projects_ in the root of the tree. There is a project identify with **UIDProject**. This project has an artifact list. In this project, there is an entry where the key is the same as the artfact mentioned above (**UIArtifact**) and the value is true (line 10). Note that a similar relationship between the aforementioned project, and the user with identification **UIDUser**, exists (in the user projects list -line 21- and  in the administrators, configurators and modelers lists of the project -lines 9, 11 and 13 respectively-).
 
+In this example, the Project has an array with the keys of the artefacts. The data of each artifact are in another array. If you want to get the data of the artifacts that are part of the project, is necessary load the data of the project, check for the elements of the array and search for each of the artefacts separately. Next, and example code using Javascript and the API of Firebase:
+
+```javascript
+
+// Gets the reference to a project
+var ref = firebase.database().ref().child('projects')
+                                .child('UIDProject');
+
+// Each of the values of the list of artifacts gets charged
+ref.child('artifacts').on('child_added', function(snapshot) {
+ 
+    // Gets the key of the artifact
+    var idArtifact = snapshot.key();
+    
+    // Gets the reference (URL) to the data of the artifact
+    var refArtifact = firebase.database().ref().child('artifacts')
+                                                .child(idArtifact); 
+
+    // Prints in the console the data
+    refArtifact.once('value', function(artifact) { 
+            console.log(artifact.val()); 
+    }); 
+});
+
+```
+  
