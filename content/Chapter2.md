@@ -6,7 +6,7 @@ The architecture of the application is compose by a set of  modules  specified a
 
 2. **Project**, module for managing projects which have a series of users in different roles (administrator, configurator and/or modeler), in addition to a set of artifacts (for example, feature models).
 
-3. **Artifact**, for handling different models to edit and manage (models features and product configurations), entities that have a number of basic characteristics of validity and belonging to a particular project, which are accessed by connecting to the server that contains the solvers developed by the [TiCSW group](http://ticsw.uniandes.edu.co).
+3. **Artifact**, for handling different models to edit and manage (models features and product configurations are the ones currently supported). Each artifact belongs to particular project, and can be accessed by the users that have the corresponding permissions. Also, is processed using a conection to the serve that contains the solvers developed by the [TiCSW group](http://ticsw.uniandes.edu.co).
 
 4. **Directives**, for the management of the different directives that are used in the application for displaying models features (display and configuration).
 
