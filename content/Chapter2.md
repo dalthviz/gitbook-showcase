@@ -15,5 +15,3 @@ As a part of the **Artifact** module, a set of directives (components for the us
 * Directive for configuration of feature models using a form.
 
 Each of these modules has a set of elements to fulfill its function such as controllers, services and HTML templates. This organization was determined searching for the project to be cohesive but loosely coupled, and the structure to be simple to understand.  
-
-On the other hand, the web application developed communicates through a REST service of solvers. Thus the services associated with the visualization and configuration features models communicates to the server where the validation logic is.
