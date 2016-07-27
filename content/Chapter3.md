@@ -1,5 +1,5 @@
 #Structure Data
-
+###3.1 Database structure
 Based on documentation of [Firebase](https://firebase.google.com/docs/database/web/structure-data) for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that the entities are store in a collections (an array) en the root of the database. The relationships between entities are handled with references using for a key the identification of the element in the correspondent list (_artifacts_, _projects_, or _users_), and the value true.
 
 ```javascript
@@ -58,4 +58,7 @@ ref.child('artifacts').on('child_added', function(snapshot) {
 });
 
 ```
-  
+
+###3.2 Feature Models Structure
+
+Angular-UI-Recursive templates tree as an array -> tree:[{...}]
