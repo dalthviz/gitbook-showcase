@@ -1,4 +1,4 @@
-# Gitbook Showcase
+# FaMoSA Gitbook
 
 ## About
 
