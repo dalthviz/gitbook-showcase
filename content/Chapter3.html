@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Chapter 3: Structure of Data | FaMoSA Gitbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../content/Chapter2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4" data-basepath=".." data-revision="Wed Jul 27 2016 18:54:46 GMT-0500 (Hora est. Pacífico, Sudamérica)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        About
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="content/Introduction.html">
+            
+                
+                    <a href="../content/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="content/Chapter1.html">
+            
+                
+                    <a href="../content/Chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Chapter 1: Requirements
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="content/Chapter2.html">
+            
+                
+                    <a href="../content/Chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Chapter 2: Architecture
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="content/Chapter3.html">
+            
+                
+                    <a href="../content/Chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Chapter 3: Structure of Data
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >FaMoSA Gitbook</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="structure-data">Structure Data</h1>
+<h3 id="3-1-database-structure">3.1 Database structure</h3>
+<p>Based on documentation of <a href="https://firebase.google.com/docs/database/web/structure-data" target="_blank">Firebase</a> for structuring data, the database must be built compactly (avoiding nesting). Thus, the information is structured in such a way that the entities are store in a collections (an array) en the root of the database. The relationships between entities are handled with references using for a key the identification of the element in the correspondent list (<em>artifacts</em>, <em>projects</em>, or <em>users</em>), and the value true.</p>
+<pre><code class="lang-javascript"><span class="hljs-number">1.</span> {
+<span class="hljs-number">2.</span> <span class="hljs-string">&quot;artifacts&quot;</span> : { <span class="hljs-string">&quot;UIDArtifact&quot;</span> :
+<span class="hljs-number">3.</span>                { <span class="hljs-string">&quot;json&quot;</span> : http:<span class="hljs-comment">//dalthviz.github.io/showcase/exampleModels/example.json&quot;,</span>
+<span class="hljs-number">4.</span>                <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Example Model&quot;</span>, 
+<span class="hljs-number">5.</span>                <span class="hljs-string">&quot;uuid&quot;</span> : <span class="hljs-string">&quot;102&quot;</span> 
+<span class="hljs-number">6.</span>                },...
+<span class="hljs-number">7.</span>              },
+<span class="hljs-number">8.</span> <span class="hljs-string">&quot;projects&quot;</span> : { <span class="hljs-string">&quot;UIDProject&quot;</span> :
+<span class="hljs-number">9.</span>               { <span class="hljs-string">&quot;administrators&quot;</span> : { <span class="hljs-string">&quot;UIDUser&quot;</span> : <span class="hljs-literal">true</span> },                      
+<span class="hljs-number">10.</span>             <span class="hljs-string">&quot;artifacts&quot;</span> : { <span class="hljs-string">&quot;UIDArtifact&quot;</span> : <span class="hljs-literal">true</span>, }, 
+<span class="hljs-number">11.</span>             <span class="hljs-string">&quot;configurators&quot;</span> : { <span class="hljs-string">&quot;UIDUser&quot;</span> : <span class="hljs-literal">true</span> },             
+<span class="hljs-number">12.</span>             <span class="hljs-string">&quot;description&quot;</span> : <span class="hljs-string">&quot;Ejemplo&quot;</span>, 
+<span class="hljs-number">13.</span>             <span class="hljs-string">&quot;modelers&quot;</span> : { <span class="hljs-string">&quot;UIDUsuario&quot;</span> : <span class="hljs-literal">true</span>},
+<span class="hljs-number">14.</span>             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Proyecto Ejemplo&quot;</span>, 
+<span class="hljs-number">15.</span>             <span class="hljs-string">&quot;parameters&quot;</span> : <span class="hljs-string">&quot;http://localhost:8080/famosa.server&quot;</span>, 
+<span class="hljs-number">16.</span>             <span class="hljs-string">&quot;tags&quot;</span> : [ <span class="hljs-string">&quot;Example&quot;</span> ] 
+<span class="hljs-number">17.</span>              },...
+<span class="hljs-number">18.</span>             },
+<span class="hljs-number">19.</span> <span class="hljs-string">&quot;users&quot;</span> : { <span class="hljs-string">&quot;UIDUser&quot;</span> : 
+<span class="hljs-number">20.</span>              { <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;Daniel Althviz&quot;</span>, 
+<span class="hljs-number">21.</span>            <span class="hljs-string">&quot;projects&quot;</span> : {<span class="hljs-string">&quot;UIDProject&quot;</span> : <span class="hljs-literal">true</span>,...}, 
+<span class="hljs-number">22.</span>            <span class="hljs-string">&quot;role&quot;</span> : <span class="hljs-literal">true</span>, 
+<span class="hljs-number">23.</span>            <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-string">&quot;UIDUser&quot;</span>,
+<span class="hljs-number">24.</span>            <span class="hljs-string">&quot;user&quot;</span> : <span class="hljs-string">&quot;d.althviz10@uniandes.edu.co&quot;</span> 
+<span class="hljs-number">25.</span>             },...
+<span class="hljs-number">26.</span>           }
+<span class="hljs-number">27.</span> }
+</code></pre>
+<p>In the JSON, note that the <em>artifacts</em> are in an array in th root of the tree. Also, there is an artifact identify <strong>UIDArtifact</strong>. In the same way, the <em>projects</em> are in another array called <em>projects</em> in the root of the tree. There is a project identify with <strong>UIDProject</strong>. This project has an artifact list. In this project, there is an entry where the key is the same as the artfact mentioned above (<strong>UIArtifact</strong>) and the value is true (<strong>line 10</strong>). Note that a similar relationship between the aforementioned project, and the user with identification <strong>UIDUser</strong>, exists (in the user projects list - <strong>line 21</strong> - and  in the administrators, configurators and modelers lists of the project - <strong>lines</strong> <strong>9</strong>, <strong>11</strong> and <strong>13</strong> respectively -).</p>
+<p>In this example, the Project has an array with the keys of the artefacts. The data of each artifact are in another array. If you want to get the data of the artifacts that are part of the project, is necessary load the data of the project, check for the elements of the array and search for each of the artefacts separately. Next, and example code using Javascript and the API of Firebase:</p>
+<pre><code class="lang-javascript">
+<span class="hljs-comment">// Gets the reference to a project</span>
+<span class="hljs-keyword">var</span> ref = firebase.database().ref().child(<span class="hljs-string">&apos;projects&apos;</span>)
+                                .child(<span class="hljs-string">&apos;UIDProject&apos;</span>);
+
+<span class="hljs-comment">// Each of the values of the list of artifacts gets charged</span>
+ref.child(<span class="hljs-string">&apos;artifacts&apos;</span>).on(<span class="hljs-string">&apos;child_added&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">snapshot</span>) </span>{
+
+    <span class="hljs-comment">// Gets the key of the artifact</span>
+    <span class="hljs-keyword">var</span> idArtifact = snapshot.key();
+
+    <span class="hljs-comment">// Gets the reference (URL) to the data of the artifact</span>
+    <span class="hljs-keyword">var</span> refArtifact = firebase.database().ref().child(<span class="hljs-string">&apos;artifacts&apos;</span>)
+                                                .child(idArtifact); 
+
+    <span class="hljs-comment">// Prints in the console the data</span>
+    refArtifact.once(<span class="hljs-string">&apos;value&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">artifact</span>) </span>{ 
+            <span class="hljs-built_in">console</span>.log(artifact.val()); 
+    }); 
+});
+</code></pre>
+<h3 id="3-2-feature-models-structure">3.2 Feature Models Structure</h3>
+<p>The models that can be viewed, edited and configured with the application, maintain a standard prototype. There is a  model that has as attributes a <strong>name</strong> (a string), an attribute for completion as <strong>complete</strong> (a boolean), a <strong>tree</strong> of features (an array) , a conjunction of <strong>steps</strong> (an array), and a group of <strong>constrains</strong> (an array).</p>
+<pre><code class="lang-javascript">{ model:{ name: <span class="hljs-string">&quot;nameDefault&quot;</span>, 
+          complete: <span class="hljs-literal">false</span>, 
+          tree:[{ id:<span class="hljs-string">&quot;_id_0&quot;</span>, 
+                 name :<span class="hljs-string">&quot;rootNameDefault&quot;</span>, 
+                 type:<span class="hljs-string">&quot;RootFeature&quot;</span>, 
+                 state:<span class="hljs-number">2</span>, children:[] 
+                }], 
+          steps:[{id:<span class="hljs-number">1</span>,
+                   type:<span class="hljs-string">&quot;RootDecision&quot;</span>, 
+                   desicion:{ feature:{ id:<span class="hljs-string">&quot;_id_0&quot;</span>, 
+                                        name: <span class="hljs-string">&quot;nameDefault&quot;</span> } 
+                             }, 
+                   propagations:[] 
+                }],
+          constrains:[]
+        }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../content/Chapter2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter 2: Architecture"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-hide-published-with/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
