@@ -5,7 +5,7 @@ Based on documentation of [Firebase](https://firebase.google.com/docs/database/w
 ```javascript
 1. {
 2. "artifacts" : { "UIDArtifact" :
-3.                { "json" : http://localhost:63342/app/example.json",
+3.                { "json" : http://dalthviz.github.io/showcase/exampleModels/example.json",
 4.                "name" : "Example Model", 
 5.                "uuid" : "102" 
 6.                },...
@@ -61,7 +61,7 @@ ref.child('artifacts').on('child_added', function(snapshot) {
 
 ###3.2 Feature Models Structure
 
-The models that can be viewed, edited and configured with the application, maintain a standard prototype. There is a  model that has as attributes a **name**, an attribute for completion (**complete**), a **tree** of features(an array) , a conjuntion of **steps** (an array), and **constrains** (an array).
+The models that can be viewed, edited and configured with the application, maintain a standard prototype. There is a  model that has as attributes a **name** (a string), an attribute for completion as **complete** (a boolean), a **tree** of features (an array) , a conjunction of **steps** (an array), and a group of **constrains** (an array).
 
 ```javascript
 { model:{ name: "nameDefault", 
@@ -83,4 +83,3 @@ The models that can be viewed, edited and configured with the application, maint
 }
 ```
 
-Angular-UI-Recursive templates tree as an array -> tree:[{...}]
