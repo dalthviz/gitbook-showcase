@@ -61,4 +61,26 @@ ref.child('artifacts').on('child_added', function(snapshot) {
 
 ###3.2 Feature Models Structure
 
+The models that can be viewed, edited and configured with the application, maintain a standard prototype. There is a  model that has as attributes a **name**, an attribute for completion (**complete**), a **tree** of features(an array) , a conjuntion of **steps** (an array), and **constrains** (an array).
+
+```javascript
+{ model:{ name: "nameDefault", 
+          complete: false, 
+          tree:[{ id:"_id_0", 
+                 name :"rootNameDefault", 
+                 type:"RootFeature", 
+                 state:2, children:[] 
+                }], 
+          steps:[{id:1,
+                   type:"RootDecision", 
+                   desicion:{ feature:{ id:"_id_0", 
+                                        name: "nameDefault" } 
+                             }, 
+                   propagations:[] 
+                }],
+          constrains:[]
+        }
+}
+```
+
 Angular-UI-Recursive templates tree as an array -> tree:[{...}]
